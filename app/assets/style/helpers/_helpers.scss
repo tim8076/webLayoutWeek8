@@ -6,6 +6,15 @@
 .img-cover{
     object-fit: cover;
 }
+.hide-scroll-bar{
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  &{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+}
 .text-hide{
     white-space: nowrap;
     text-indent: 101%;

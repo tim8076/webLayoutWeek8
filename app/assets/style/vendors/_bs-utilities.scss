@@ -29,7 +29,11 @@ $utilities: map-merge(
     ),
     "bottom": map-merge(
       map-get($utilities, "bottom"),
-      ( responsive: true ),
+      ( responsive: true ,
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          ( n1: -16px )) 
+      ),
     ),
     "width": map-merge(
       map-get($utilities, "width"),
@@ -69,6 +73,10 @@ $utilities: map-merge(
     ),
     "border-end": map-merge(
       map-get($utilities, "border-end"),
+      ( responsive: true ),
+    ),
+    "over-flow": map-merge(
+      map-get($utilities, "overflow"),
       ( responsive: true ),
     ),
     "rounded": map-merge(

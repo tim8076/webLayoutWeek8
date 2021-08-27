@@ -1,11 +1,15 @@
 
 .card{
   border-radius: 1rem;
-  overflow: hidden;
-
+  position: relative;
   //背景圖加文字
+  &__intro-sm{
+    height: 196px;
+    border: none;
+  }
   &__intro-md{
     height: 420px;
+    border: none;
     @include media-breakpoint-up(md){
       height: 252px;
     }
@@ -18,6 +22,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding: 24px;
   }
 
   //純圖片
@@ -25,6 +30,7 @@
     border: none;
   }
   &__image img{
+    border-radius: 1rem;
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -41,6 +47,9 @@
   &__image-210{
     height: 210px;
   }
+  &__image-218{
+    height: 218px;
+  }
   &__image-238{
     height: 238px;
   }
@@ -55,6 +64,11 @@
       height: 150px;
     }
   }
+  &__image-md-341{
+    @include media-breakpoint-up(md){
+      height: 341px;
+    }
+  }
   &__image-lg-207{
      @include media-breakpoint-up(lg){
       height: 207px;
@@ -66,5 +80,39 @@
     }
   }
 
-  //左圖 右文字
+  //上圖 下文字
+  &-img-top{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  //上正圓形圖 內文字 (師資介紹卡片)
+  &__circle-top{
+    border-radius: 1rem;
+    padding: 3.5rem 1.5rem 1.5rem 1.5rem;
+    height: 418px;
+    color: $white;
+    &--secondary{
+      background-color: $secondary;
+      & + .card__circle-top--img{
+        border: 4px solid $thirdly;
+      }
+    }
+    &--thirdly{
+      background-color: $thirdly;
+      & + .card__circle-top--img{
+        border: 4px solid $secondary;
+      }
+    }
+    &--img{
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      width: 96px;
+      height: 96px;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
 }

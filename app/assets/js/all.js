@@ -6,7 +6,7 @@ const swiperCourse = new Swiper('.swiper-course', {
   spaceBetween: 30
 });
 
-const swiperCommentSm = new Swiper('.swiper-comment-sm', {
+const swiperCommentSm = new Swiper('.swiper-comment', {
   // Optional parameters
   loop: false,
   autoplay: false,
@@ -14,19 +14,26 @@ const swiperCommentSm = new Swiper('.swiper-comment-sm', {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  spaceBetween: 30
-});
-
-const swiperCommentMd = new Swiper('.swiper-comment-md', {
-  // Optional parameters
-  loop: true,
-  autoplay: true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 30,
+  grid: {
+    rows: 3,
+    fill: 'row',
+  },
   breakpoints: {
+    768: {
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+        fill: 'row'
+      }
+    },
     992: {
       slidesPerView: 3,
-      autoplay: false,
+      grid: {
+        rows: 2,
+        fill: 'row'
+      },
     }
   }
 });
@@ -48,3 +55,33 @@ const swiperCourseChoose = new Swiper('.courseChoose', {
     }
   }
 });
+
+const swiperTeachers = new Swiper('.swiper-teachers',{
+  slidesPerView: 1,
+  spaceBetween: 30,
+  grid: {
+    rows: 4,
+    fill: 'row',
+  },
+  breakpoints: {
+    768: {
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      slidesPerView: 2,
+      grid: {
+        rows: 1,
+        fill: 'row',
+      }
+    },
+    992: {
+      slidesPerView: 3,
+      grid: {
+        rows: 1,
+        fill: 'row',
+      }
+    }
+  }
+})
