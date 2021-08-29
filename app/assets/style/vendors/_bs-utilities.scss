@@ -21,7 +21,7 @@ $utilities: map-merge(
       ( responsive: true ,
          values: map-merge(
           map-get(map-get($utilities, "width"), "values"),
-          ( n45: -45px ))),
+          ( 16: 16px ))),
     ),
     "start": map-merge(
       map-get($utilities, "start"),
@@ -34,6 +34,15 @@ $utilities: map-merge(
           map-get(map-get($utilities, "width"), "values"),
           ( n1: -16px )) 
       ),
+    ),
+    "max-width": map-merge(
+      map-get($utilities, "max-width"),
+      ( responsive: true ,
+         values: map-merge(
+          map-get(map-get($utilities, "max-width"), "values"),
+          ( 60: 60%,
+            80: 80% )
+          )),
     ),
     "width": map-merge(
       map-get($utilities, "width"),
@@ -67,7 +76,25 @@ $utilities: map-merge(
            3: 60px,
            4: 68px,
            5: 94px,
-           6: 96px
+           6: 96px,
+           117: 117px,
+           150: 150px,
+           165: 165px,
+           196: 196px,
+           207: 207px,
+           210: 210px,
+           218: 218px,
+           238: 238px,
+           252: 252px,
+           266: 266px,
+           320: 320px,
+           341: 341px,
+           350: 350px,
+           420: 420px,
+           444: 444px,
+           445: 445px,
+           546: 546px,
+           628: 628px,
           ))
       )
     ),

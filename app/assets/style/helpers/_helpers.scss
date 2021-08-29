@@ -3,9 +3,27 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .img-cover{
     object-fit: cover;
 }
+
+.ms-negative-lg-1{
+  @include media-breakpoint-up(lg){
+    margin-left: -16% !important; 
+  }
+}
+.me-negative-md-1{
+  @include media-breakpoint-up(md){
+    margin-right: -16% !important; 
+  }
+}
+.me-negative-lg-1{
+  @include media-breakpoint-up(lg){
+    margin-right: -16% !important; 
+  }
+}
+
 .hide-scroll-bar{
   &::-webkit-scrollbar{
     display: none;
@@ -15,11 +33,13 @@
     scrollbar-width: none;     /* Firefox */
   }
 }
+
 .text-hide{
-    white-space: nowrap;
-    text-indent: 101%;
-    overflow: hidden;
+  white-space: nowrap;
+  text-indent: 101%;
+  overflow: hidden;
 }
+
 .text-overflow{
   text-indent:101%; /*首行縮排*/
   overflow:hidden; /*自動隱藏超出的文字或圖片*/

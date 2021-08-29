@@ -18,48 +18,69 @@
 
   <body>
     <header class="bg-primary">
-      <nav class="navbar navbar-expand-lg py-0">
-        <div class="container py-5">
-          <h1>
-            <a href="#" class="header__logo text-overflow bg-cover d-block">
-              DOYOGA
-            </a>
-          </h1>
-          <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="material-icons md-33 text-secondary">
-              reorder
-            </span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 fw-light">
-              <li class="nav-item">
-                <a class="nav-link px-lg-4" href="#">課程介紹</a>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-0">
+          <div class="container-fluid px-0 py-5">
+            <h1>
+              <a href="index.html" class="header__logo text-overflow bg-cover d-block">
+                DOYOGA
+              </a>
+            </h1>
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="material-icons md-33 text-secondary">
+                reorder
+              </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0 fw-light">
+                <li class="nav-item">
+                  <a class="nav-link text-center px-lg-4" href="course.html">課程介紹</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center px-lg-4" href="surrounding.html">瑜珈空間</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center px-lg-4" href="curriculum.html">當月課表</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="d-none d-lg-flex">
+              <li>
+                <a href="reservation.html" class="btn btn-outline-secondary rounded-4 fs-5">
+                  立即預約
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link px-lg-4" href="#">瑜珈空間</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-lg-4" href="#">當月課表</a>
+              <li class="ms-4">
+                <a href="contact.html" class="btn btn-outline-secondary rounded-4 fs-5">
+                  聯絡我們
+                </a>
               </li>
             </ul>
           </div>
-          <ul class="d-none d-lg-flex">
-            <li>
-              <a href="#" class="btn btn-outline-secondary rounded-4 fs-5">
-                立即預約
-              </a>
-            </li>
-            <li class="ms-4">
-              <a href="#" class="btn btn-outline-secondary rounded-4 fs-5">
-                聯絡我們
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
+    <!-- 右側 fixed 社群icons -->
+    <ul class="d-none d-lg-block text-secondary
+              position-fixed top-50 end-16 translate-middle-y">
+      <li>
+        <a href="#" class="fs-large d-block lh-1 mb-2">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="fs-large d-block lh-1 mb-2">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="fs-large d-block lh-1 mb-2">
+          <i class="fab fa-line"></i>
+        </a>
+      </li>
+    </ul>
     <%- contents %>
 
     <footer class="bg-secondary pt-6 pb-8 py-md-8">
@@ -71,13 +92,14 @@
                   現在訂閱，獲得課程優惠碼！
                 </h3>
               </div>
-              <div class="col-lg-4">
-                <div class="input-group py-2">
-                  <input type="text" class="form-control" placeholder="輸入您的電子信箱">
-                  <button class="btn btn-thirdly text-white" type="button" id="subscribe">
-                    訂閱
-                  </button>
-                </div>
+              <div class="col-md-6 col-lg-4">
+                <form action="index.html" type="post">
+                  <div class="input-group py-2">
+                    <input type="text" class="form-control" placeholder="輸入您的電子信箱">
+                    <input class="btn btn-thirdly text-white" value="訂閱"
+                           type="submit" id="subscribe">
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -109,17 +131,17 @@
             </div>
             <ul class="text-white position-relative">
               <li class="mb-2">
-                <a href="#">課程介紹</a>
+                <a href="course.html">課程介紹</a>
               </li>
               <li class="mb-2">
-                <a href="#">瑜珈空間</a>
+                <a href="surrounding.html">瑜珈空間</a>
               </li>
               <li class="mb-2 mb-md-0">
-                <a href="#">當月課表</a>
+                <a href="curriculum.html">當月課表</a>
               </li>
-              <p class="position-md-absolute bottom-0 start-50 translate-middle-md-x">
-                © 2021. All Rights Reserved.
-              </p>
+              <li class="position-md-absolute bottom-0 start-50 translate-middle-md">
+                © 2021. All Rights Reserved
+              </li>
             </ul>
           </div>
        </div>
