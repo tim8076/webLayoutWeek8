@@ -1,4 +1,24 @@
+//aos 套件
+AOS.init({
+  duration: 1800,
+  easing: 'ease',
+});
 
+
+// //header scroll
+// const nav = document.querySelector('[data-header]');
+// function scrollHandler() {
+//   if( window.scrollY > 76 ) {
+//     nav.classList.add('top')
+//   } else {
+//     nav.classList.remove('top')
+//   }
+// }
+
+// window.addEventListener('scroll', scrollHandler)
+
+
+//swiper setting
 const swiperCourse = new Swiper('.swiper-course', {
   // Optional parameters
   loop: true,

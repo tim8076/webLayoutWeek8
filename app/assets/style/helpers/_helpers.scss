@@ -1,11 +1,11 @@
 .bg-cover{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .img-cover{
-    object-fit: cover;
+  object-fit: cover !important;
 }
 
 .ms-negative-lg-1{
@@ -31,6 +31,23 @@
   &{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;     /* Firefox */
+  }
+}
+.hover-line{
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    right: 50%;
+    height: 1px;
+    background-color: $dark;
+    transition: $transition-base;
+  }
+  &:hover::before{
+    left: 0;
+    right: 0;
   }
 }
 
