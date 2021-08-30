@@ -1,11 +1,10 @@
+"use strict";
+
 //aos 套件
 AOS.init({
   duration: 1800,
-  easing: 'ease',
-});
-
-
-// //header scroll
+  easing: 'ease'
+}); // //header scroll
 // const nav = document.querySelector('[data-header]');
 // function scrollHandler() {
 //   if( window.scrollY > 76 ) {
@@ -14,33 +13,30 @@ AOS.init({
 //     nav.classList.remove('top')
 //   }
 // }
-
 // window.addEventListener('scroll', scrollHandler)
-
-
 //swiper setting
-const swiperCourse = new Swiper('.swiper-course', {
+
+var swiperCourse = new Swiper('.swiper-course', {
   // Optional parameters
   loop: true,
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false,
+    disableOnInteraction: false
   },
   spaceBetween: 30,
-  slidesPerView: 1.4,
+  slidesPerView: 1.4
 });
-
-const swiperCommentSm = new Swiper('.swiper-comment', {
+var swiperCommentSm = new Swiper('.swiper-comment', {
   // Optional parameters
   navigation: {
     nextEl: ".swiper-comment-next",
-    prevEl: ".swiper-comment-prev",
+    prevEl: ".swiper-comment-prev"
   },
   slidesPerView: 1,
   spaceBetween: 30,
   grid: {
     rows: 3,
-    fill: 'row',
+    fill: 'row'
   },
   breakpoints: {
     768: {
@@ -55,18 +51,17 @@ const swiperCommentSm = new Swiper('.swiper-comment', {
       grid: {
         rows: 2,
         fill: 'row'
-      },
+      }
     }
   }
 });
-
-const swiperCourseChoose = new Swiper('.courseChoose', {
+var swiperCourseChoose = new Swiper('.courseChoose', {
   // Optional parameters
   slidesPerView: 1,
   spaceBetween: 24,
   grid: {
     rows: 3,
-    fill: 'row',
+    fill: 'row'
   },
   breakpoints: {
     768: {
@@ -74,56 +69,55 @@ const swiperCourseChoose = new Swiper('.courseChoose', {
       spaceBetween: 30,
       grid: {
         rows: 1,
-        fill: 'row',
-      },
+        fill: 'row'
+      }
     },
     992: {
-      slidesPerView: 3,
+      slidesPerView: 3
     }
   }
 });
-
-const swiperTeachers = new Swiper('.swiper-teachers',{
+var swiperTeachers = new Swiper('.swiper-teachers', {
   loop: true,
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false,
+    disableOnInteraction: false
   },
   slidesPerView: 1,
   spaceBetween: 30,
   grid: {
     rows: 4,
-    fill: 'row',
+    fill: 'row'
   },
   breakpoints: {
     768: {
       slidesPerView: 2,
       grid: {
         rows: 1,
-        fill: 'row',
+        fill: 'row'
       }
     },
     992: {
       slidesPerView: 3,
       grid: {
         rows: 1,
-        fill: 'row',
+        fill: 'row'
       }
     }
   }
-})
-
-const swiperRecommend = new Swiper('.swiper-recommend',{
+});
+var swiperRecommend = new Swiper('.swiper-recommend', {
   slidesPerView: 1.25,
   spaceBetween: 30,
   loop: true,
   autoplay: true,
   breakpoints: {
     768: {
-      slidesPerView: 3,
+      slidesPerView: 3
     },
     992: {
-      slidesPerView: 4.25,
+      slidesPerView: 4.25
     }
   }
-})
+});
+//# sourceMappingURL=all.js.map

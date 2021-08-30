@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOYOGA 預約課程</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="header bg-primary" data-header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-0">
+          <div class="container-fluid px-0 py-5">
+            <h1>
+              <a href="index.html" class="header__logo text-overflow bg-cover d-block">
+                DOYOGA
+              </a>
+            </h1>
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="material-icons md-33 text-secondary">
+                reorder
+              </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0 fw-light">
+                <li class="nav-item">
+                  <a class="nav-link text-center px-lg-4 hover-line" href="course.html">課程介紹</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center px-lg-4 hover-line" href="surrounding.html">瑜珈空間</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center px-lg-4 hover-line" href="curriculum.html">當月課表</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="d-none d-lg-flex">
+              <li>
+                <a href="reservation.html" class="btn btn-outline-secondary rounded-4 fs-5">
+                  立即預約
+                </a>
+              </li>
+              <li class="ms-4">
+                <a href="contact.html" class="btn btn-outline-secondary rounded-4 fs-5">
+                  聯絡我們
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 右側 fixed 社群icons -->
+    <ul class="d-none d-lg-block text-secondary
+              position-fixed top-50 end-16 translate-middle-y">
+      <li>
+        <a href="#" class="fs-large d-block lh-1 mb-2">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="fs-large d-block lh-1 mb-2">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="fs-large d-block lh-1 mb-2">
+          <i class="fab fa-line"></i>
+        </a>
+      </li>
+    </ul>
+    
+<div class="pt-12 pb-l1 pt-md-16 pb-md-d8 pb-lg-l3">
+  <h2 class="text-center fw-normal mb-6 mb-md-4">立即預約</h2>
+  <div class="container">
+    <ul class="d-flex justify-content-between justify-content-md-center 
+               mb-8 mb-md-6 mb-lg-8">
+      <li class="py-3 px-5 p-md-3 py-lg-3 px-lg-12
+                 bg-primary me-md-d3 rounded-4">
+        選擇方案
+      </li>
+      <li class="py-3 px-5 p-md-3 py-lg-3 px-lg-12 
+                 bg-secondary me-md-d3 text-white rounded-4">
+        填寫資料
+      </li>
+      <li class="py-3 px-5 p-md-3 py-lg-3 px-lg-12 
+                 bg-primary rounded-4">
+        完成預約
+      </li>
+    </ul>
+    <div class="d-flex align-items-center justify-content-center
+                mb-6 mb-lg-8">
+      <p class="text-dark">你選擇的是</p>
+      <h3 class="ms-4 fw-normal text-thirdly">首次體驗課程-基礎</h3>
+    </div>
+    <div class="row justify-content-center">
+       <div class="col-md-6 col-lg-4">
+          <form action="reservation-2.html">
+            <ul>
+              <li class="mb-8">
+                <p class="mb-4">1. 是否接觸過瑜珈?</p>
+                <label>
+                  <input class="me-1" type="radio" name="hasYoga" value="是">是
+                </label>
+                <label>
+                  <input class="ms-8 me-1" type="radio" name="hasYoga" value="否">否
+                </label>
+              </li>
+              <li class="mb-8">
+                <p class="mb-4">2. 想改善的生活問題?</p>
+                <label>
+                  <input class="mb-4 me-1" type="checkbox" name="problem" value="肌耐力不足">肌耐力不足
+                </label>
+                <label>
+                  <input class="mb-4 me-1 ms-3 ms-md-4" type="checkbox" name="problem" value="柔軟度不佳">柔軟度不佳
+                </label>
+                <label>
+                  <input class="mb-4 me-1 ms-3 ms-md-4" type="checkbox" name="problem" value="壓力大">壓力大
+                </label>
+                <label>
+                  <input class="mb-4 me-1" type="checkbox" name="problem" value="姿勢不正">姿勢不正
+                </label>
+                <label>
+                  <input class="mb-4 me-1 ms-7 ms-md-8" type="checkbox" name="problem" value="睡眠品質差">睡眠品質差
+                </label>
+                <label>
+                  <input class="mb-4 me-1 ms-3 ms-md-4" type="checkbox" name="problem" value="注意力不足">注意力不足
+                </label>
+              </li>
+              <li class="mb-8">
+                <p class="mb-4">3. 每週累積運動量約為多少？</p>
+                <label>
+                  <input class="me-1 mb-4" type="radio" name="exerciseAmount" value="150 分鐘以上">150 分鐘以上
+                </label>
+                <label>
+                  <input class="me-1 ms-8 mb-4" type="radio" name="exerciseAmount" value="75~150 分鐘">75~150 分鐘
+                </label>
+                <label>
+                  <input class="me-1" type="radio" name="exerciseAmount" value="30~75 分鐘">30~75 分鐘
+                </label>
+                <label>
+                  <input class="me-1 ms-11" type="radio" name="exerciseAmount" value="30 分鐘以下">30 分鐘以下
+                </label>
+              </li>
+              <li class="mb-8">
+                <p class="mb-1">4. 上課預約報到日</p>
+                <p class="mb-2 fs-6">
+                  若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！
+                </p>
+                <input type="date" name="date" class="form-control text-secondary w-50 py-2 px-3">
+              </li>
+              <li class="mb-8">
+                <p class="mb-4">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+                <div class="d-flex mb-4">
+                  <div>
+                    <label for="name" class="form-label">姓名</label><br>
+                    <input class="w-100 form-control py-2 px-3" placeholder="請輸入您的姓名" type="text" name="name" id="name">
+                  </div>
+                  <div class="ms-2">
+                    <label for="age" class="form-label">年齡</label><br>
+                    <input class="w-100 form-control py-2 px-3" placeholder="請輸入您的年齡" type="number" name="age" id="age">
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label for="sex" class="form-label">性別</label><br>
+                  <select name="sex" id="sex" class="form-control py-2 px-3 w-25 text-secondary">
+                    <option value="女" selected>女</option>
+                    <option value="男">男</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <label for="email" class="form-label">電子信箱</label><br>
+                  <input type="email" name="email" id="email" class="form-control py-2 px-3" placeholder="email@example.com">
+                </div>
+                <div>
+                  <label for="tel" class="form-label">電話</label><br>
+                  <input type="tel" name="tel" id="tel" class="form-control py-2 px-3" placeholder="0912-345-678">
+                </div>
+              </li>
+              <li>
+                <a href="reservation-3.html" class="btn btn-secondary w-100 text-white">
+                  送出
+                </a>
+              </li>
+            </ul>
+          </form>
+       </div>
+    </div>
+  </div>
+</div>
+
+    <footer class="bg-secondary pt-6 pb-8 py-md-8">
+       <div class="border-bottom pb-4">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-lg-5">
+                <h3 class="fs-3 fs-md-2 text-white fw-normal">
+                  現在訂閱，獲得課程優惠碼！
+                </h3>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <form action="index.html" type="post">
+                  <div class="input-group py-2">
+                    <input type="text" class="form-control" placeholder="輸入您的電子信箱">
+                    <input class="btn btn-thirdly text-white" value="訂閱"
+                           type="submit" id="subscribe">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+       </div>
+       <div class="pt-6 pt-md-8">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <a href="index.html">
+                 <img class="footer__logo"
+                      src="./assets/images/DOYOGA.png" alt="">
+              </a>
+              <ul class="text-white d-flex">
+                <li>
+                  <a href="#">
+                    <i class="fab fa-facebook me-2 fs-3"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-instagram me-2 fs-3"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-line fs-3"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="text-white position-relative">
+              <li class="mb-2">
+                <a href="course.html">課程介紹</a>
+              </li>
+              <li class="mb-2">
+                <a href="surrounding.html">瑜珈空間</a>
+              </li>
+              <li class="mb-2 mb-md-0">
+                <a href="curriculum.html">當月課表</a>
+              </li>
+              <li class="position-md-absolute bottom-0 start-50 translate-middle-md">
+                © 2021. All Rights Reserved
+              </li>
+            </ul>
+          </div>
+       </div>
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

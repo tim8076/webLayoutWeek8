@@ -1,10 +1,88 @@
----
-title: DOYOGA 課程介紹
-layout: ./app/layout.ejs
-engine: ejs
-current: course
----
-<div class="container py-12 pt-md-16 pb-md-18">
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOYOGA 課程介紹</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="header bg-primary" data-header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-0">
+          <div class="container-fluid px-0 py-5">
+            <h1>
+              <a href="index.html" class="header__logo text-overflow bg-cover d-block">
+                DOYOGA
+              </a>
+            </h1>
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="material-icons md-33 text-secondary">
+                reorder
+              </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0 fw-light">
+                <li class="nav-item">
+                  <a class="nav-link text-center px-lg-4 hover-line" href="course.html">課程介紹</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center px-lg-4 hover-line" href="surrounding.html">瑜珈空間</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center px-lg-4 hover-line" href="curriculum.html">當月課表</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="d-none d-lg-flex">
+              <li>
+                <a href="reservation.html" class="btn btn-outline-secondary rounded-4 fs-5">
+                  立即預約
+                </a>
+              </li>
+              <li class="ms-4">
+                <a href="contact.html" class="btn btn-outline-secondary rounded-4 fs-5">
+                  聯絡我們
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 右側 fixed 社群icons -->
+    <ul class="d-none d-lg-block text-secondary
+              position-fixed top-50 end-16 translate-middle-y">
+      <li>
+        <a href="#" class="fs-large d-block lh-1 mb-2">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="fs-large d-block lh-1 mb-2">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="fs-large d-block lh-1 mb-2">
+          <i class="fab fa-line"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="container py-12 pt-md-16 pb-md-18">
   <h2 class="text-center fw-normal mb-6 mb-lg-8">課程介紹</h2>
   <div class="row">
     <div class="col-md-6 mb-2 mb-md-0 offset-lg-1">
@@ -327,3 +405,74 @@ current: course
     </div>
   </div>
 </div>
+
+
+    <footer class="bg-secondary pt-6 pb-8 py-md-8">
+       <div class="border-bottom pb-4">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-lg-5">
+                <h3 class="fs-3 fs-md-2 text-white fw-normal">
+                  現在訂閱，獲得課程優惠碼！
+                </h3>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <form action="index.html" type="post">
+                  <div class="input-group py-2">
+                    <input type="text" class="form-control" placeholder="輸入您的電子信箱">
+                    <input class="btn btn-thirdly text-white" value="訂閱"
+                           type="submit" id="subscribe">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+       </div>
+       <div class="pt-6 pt-md-8">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <a href="index.html">
+                 <img class="footer__logo"
+                      src="./assets/images/DOYOGA.png" alt="">
+              </a>
+              <ul class="text-white d-flex">
+                <li>
+                  <a href="#">
+                    <i class="fab fa-facebook me-2 fs-3"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-instagram me-2 fs-3"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-line fs-3"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="text-white position-relative">
+              <li class="mb-2">
+                <a href="course.html">課程介紹</a>
+              </li>
+              <li class="mb-2">
+                <a href="surrounding.html">瑜珈空間</a>
+              </li>
+              <li class="mb-2 mb-md-0">
+                <a href="curriculum.html">當月課表</a>
+              </li>
+              <li class="position-md-absolute bottom-0 start-50 translate-middle-md">
+                © 2021. All Rights Reserved
+              </li>
+            </ul>
+          </div>
+       </div>
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
