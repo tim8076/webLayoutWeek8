@@ -21793,6 +21793,10 @@ a {
      object-fit: cover !important;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden !important;
+}
+
 @media (min-width: 992px) {
   .ms-negative-lg-1 {
     margin-left: -16% !important;
@@ -21842,12 +21846,6 @@ a {
 .hover-line:hover::before {
   left: 0;
   right: 0;
-}
-
-.text-hide {
-  white-space: nowrap;
-  text-indent: 101%;
-  overflow: hidden;
 }
 
 .text-overflow {
